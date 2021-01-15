@@ -133,7 +133,7 @@ void printR(node* m,char* c,int i){
 		if (m->children[j]!=NULL){
 			//so we update the char c in index i
 			c[i] = m->children[j]->letter;
-			printD(m->children[j], c, i+1);
+			printR(m->children[j], c, i+1);
 		}
 	}
 }
