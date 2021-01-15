@@ -88,7 +88,7 @@ void printD(node* m,char* c,int i){
 		//we check if it at the end (/0)- null
 		c[i] = '\0';
 		//and print it
-		printf("%s\t%ld\n", c, (*m).count);
+		printf("%s %ld\n", c, (*m).count);
 		return;
 	}
 	//if its not leaf we check if the value tjat hold by count to m is more than zero
@@ -96,7 +96,7 @@ void printD(node* m,char* c,int i){
 		//if it so we check if its at the end(/0)
 		c[i] = '\0';
 		//and print it
-		printf("%s\t%ld\n", c, (*m).count);
+		printf("%s %ld\n", c, (*m).count);
 	}
 	int j;
 	//loop over the num letters (until 26)
@@ -117,14 +117,14 @@ void printR(node* m,char* c,int i){
 		//so we update the char c in index i
     	c[i] = '\0';
     	//and print 
-    	printf("%s\t%ld\n", c, (*m).count);
+    	printf("%s %ld\n", c, (*m).count);
 		return;
 	}
 	//if its not leaf we check if the value hat hold by count to m is more than zero
 	if (m->count > 0){
 		// we update the char c in index i 
 		c[i] = '\0';
-		printf("%s\t%ld\n", c, (*m).count);
+		printf("%s %ld\n", c, (*m).count);
 	}
 	int j;
 	//loop over from num letter to 0
