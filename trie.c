@@ -106,7 +106,7 @@ void printD(node* m,char* c,int i){
 			//so the update the char c in index i
 			c[i] = m->children[j]->letter;
 			// recursive over the function but with i+1             
-			printD((*m).children[j], c, i);
+			printD((*m).children[j], c, i+1);
 		}
 	}
 }
@@ -133,7 +133,7 @@ void printR(node* m,char* c,int i){
 		if (m->children[j]!=NULL){
 			//so we update the char c in index i
 			c[i] = m->children[j]->letter;
-			printD(m->children[j], c, i);
+			printD(m->children[j], c, i+1);
 		}
 	}
 }
